@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${animalName}">Animal Detail</title>
+    <style>
+        .animal-detail {
+            text-align: center;
+        }
+        .animal-detail img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="animal-detail">
+        <h1 th:text="${animalName}">Animal Name</h1>
+        <img th:src="@{/images/{animalImage}(animalImage=${animalImage})}" alt="Animal Image">
+        <p th:text="${animalDescription}">Animal Description</p>
+        <a href="/project">Back to Gallery</a>
+    </div>
+</body>
+</html>

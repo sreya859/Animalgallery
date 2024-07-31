@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Animal Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animal Gallery</h1>
+    <div class="gallery">
+        <a th:href="@{/animalDetail/lion}">
+            <img th:src="@{/images/lion.jpg}" alt="Lion">
+        </a>
+        <a th:href="@{/animalDetail/tiger}">
+            <img th:src="@{/images/tiger.jpg}" alt="Tiger">
+        </a>
+        <a th:href="@{/animalDetail/elephant}">
+            <img th:src="@{/images/elephant.jpg}" alt="Elephant">
+        </a>
+        <a th:href="@{/animalDetail/giraffe}">
+            <img th:src="@{/images/giraffe.jpg}" alt="Giraffe">
+        </a>
+        <a th:href="@{/animalDetail/zebra}">
+            <img th:src="@{/images/zebra.jpg}" alt="Zebra">
+        </a>
+        <a th:href="@{/animalDetail/rhino}">
+            <img th:src="@{/images/rhino.jpg}" alt="Rhino">
+        </a>
+        <a th:href="@{/animalDetail/panda}">
+            <img th:src="@{/images/panda.jpg}" alt="Panda">
+        </a>
+        <a th:href="@{/animalDetail/bear}">
+            <img th:src="@{/images/bear.jpg}" alt="Bear">
+        </a>
+        <a th:href="@{/animalDetail/kangaroo}">
+            <img th:src="@{/images/kangaroo.jpg}" alt="Kangaroo">
+        </a>
+    </div>
+</body>
+</html>
